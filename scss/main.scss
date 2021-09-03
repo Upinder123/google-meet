@@ -34,8 +34,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    min-width: 50px;
+    // flex-grow: 1;
+    min-width: 40px;
+    // min-height: 40px;
     overflow: hidden;
     white-space: nowrap;
     font-family: sans-serif;
@@ -135,11 +136,10 @@ body {
   border:1px solid #dadce0;
   border-radius: 50%;
   border-width: 0;
-  width: 30px;
-  height: 40px;
   padding: 8px;
   font-size: 24px;
   font: 400 13.3333px Arial;
+  height: 40px;
 }
 .navbar__center__btn__red{
   background-color: #ea4335;
