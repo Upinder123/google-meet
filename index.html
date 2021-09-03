@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+
+<body>
+
+  <!-- your content here... -->
+  <script src="js/scripts.js"></script>
+  <div class="profilepic">
+    <img class="profilepic__image" src="/static/img/fc48aeb0-d91f-11de-860f-001cc4c002e0.image.jpg" alt="">
+  </div>
+<nav class="nav">
+  <div href="#" class="nav__link nav__left">
+    <i class="material-icons nav__icon">dashboard</i>
+    <span class="nav__text">Dashboard</span>
+  </div>
+  <div href="#" class="nav__link nav__center">
+    <button href="#" class="nav__link navbar__center__btn navbar__center__btn__red">
+        <img src="/static/img/mic_white_24dp.svg">
+    </button>
+      <button href="#" class="nav__link navbar__center__btn navbar__center__btn__red">
+        <img src="/static/img/videocam_white_24dp.svg">
+      </button>
+      <button href="#" class="nav__link navbar__center__btn">
+        <img src="/static/img/closed_caption_white_24dp.svg">
+      </button>
+      <button href="#" class="nav__link navbar__center__btn">
+        <img src="/static/img/present_to_all_white_24dp.svg">
+      </button>
+      <button  href="#" class="nav__link navbar__center__btn">
+        <img src="/static/img/more_vert_white_24dp.svg">
+      </button>
+      <button href="#" class="nav__link navbar__center__btn navbar__center__btn__red">
+        <img src="/static/img/phone_disabled_white_24dp.svg"> 
+      </button>
+  </div>
+  <div href="#" class="nav__link nav__right">
+    <a href="#" class="nav__link" onclick="openNav()">
+      <img src="/static/img/info_white_24dp.svg">
+    </a>
+    <a href="#" class="nav__link" onclick="openNav()">
+      <img src="/static/img/group_white_24dp.svg">
+    </a>
+    <a href="#" class="nav__link" onclick="openNav()">
+     <img src="/static/img/chat_white_24dp.svg">
+    </a>
+    <a href="#" class="nav__link" onclick="openActivities()">
+      <img src="/static/img/list_alt_white_24dp.svg">
+    </a>
+    <a href="#" class="nav__link" onclick="openNav()">
+      <img src="https://www.gstatic.com/meet/host_dark_default_24px_a31fe7075f38ed304f0d56353393c9d2.svg">
+    </a>
+  </div>
+</nav>
+
+  </head>
+  <body>
+  
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="Activities" class="sidebar">
+    <div class="sidebar__activities zHGix" role="heading" aria-level="2">Activities <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>    
+    <ul class="VfPpkd-StrnGf-rymPhb  VfPpkd-StrnGf-rymPhb-OWXEXe-HiaYvf-rymPhb  VfPpkd-StrnGf-rymPhb-OWXEXe-aSi1db-RWgCYc DMZ54e bwNLcf vqjb4e sslT9d" jscontroller="PHUIyb" jsaction="mouseleave:JywGue; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; keydown:I481le" role="listbox" tabindex="0" aria-label="List of available add ons"><li class="rHLKYe VfPpkd-StrnGf-rymPhb-ibnC6b" jsaction="click:o6ZaF; keydown:RDtNu; keyup:JdS61c; focusin:MeMJlc; focusout:bkTmIf;mousedown:teoBgf; mouseup:NZPHBc; mouseenter:SKyDAe; mouseleave:xq3APb; touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8; change:uOgbud" role="option" aria-label="Whiteboarding, Collaboratively brainstorm and sketch ideas" tabindex="0" data-tool-id="9" style="--mdc-ripple-fg-size:216px; --mdc-ripple-fg-scale:1.74597; --mdc-ripple-fg-translate-start:7px, -64px; --mdc-ripple-fg-translate-end:72px, -72px;"><span class="VfPpkd-StrnGf-rymPhb-pZXsl"></span><span class=" VfPpkd-StrnGf-rymPhb-f7MjDc"><div jsaction="rcuQ6b:drtwse;ntQuZe:drtwse;PHhfHc:drtwse" class="GMuzH IlTvAb" jscontroller="bsTKnc" style="display: none;"></div><img alt="" src="https://www.gstatic.com/meet/google-meet-icons_whiteboard-icon_44ebb90da0e177ad2a47be47dccc81ae.svg" class="ERCYJc NCaoKd" data-iml="920161.2000000002"></span><span class=" VfPpkd-StrnGf-rymPhb-b9t22c"><span jsname="K4r5Ff" class=" VfPpkd-StrnGf-rymPhb-fpDzbe-fmcmS WPeMgd">Whiteboarding</span><span jsname="uyy0gb" class=" VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS KrefDd">Collaboratively brainstorm and sketch ideas</span></span></li></ul>
+  </div>
+  
+  <script>min-width
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  function openActivities(){
+    document.getElementById("Activities").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  function closeActivities() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+     
+  </body>
+  </html> 
+  
+</body>
+</html>
