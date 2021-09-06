@@ -42,7 +42,7 @@
     <a href="#" class="nav__link" onclick="openNav('Info')">
       <img src="/static/img/info_white_24dp.svg">
     </a>
-    <a href="#" class="nav__link" onclick="openNav()">
+    <a href="#" class="nav__link" onclick="openNav('People')">
       <img src="/static/img/group_white_24dp.svg">
     </a>
     <a href="#" class="nav__link" onclick="openNav()">
@@ -59,6 +59,36 @@
 
   </head>
   <body>
+  <div class="sidebar">
+      <h2></h2>
+    </div>
+    <div id="People" class="sidebar">
+      <div class="people__heading">
+      <h2>People</h2>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav('People')">×</a>
+      </div>
+      <div class="people_remote">
+        <button class="people__btn"><img src="/static/img/mic_off_black_24dp.svg"> <h3>all muted</h3></button>
+        <button class="people__btn"><img src="/static/img/group_add_black_24dp.svg"><h3>Add People</h3></button>
+        <button class="people__btn"><img src="/static/img/toggle_on_black_24dp.svg"><h3>Host control</h3></button>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        <h4>In call</h4>
+      </div>
+      <div class="people__card">
+        <div>
+          <img class="people__card__img" src="/static/img/android-chrome-192x192.png" alt="">
+        </div>
+        <div class="people__card__name">
+        <div>UPINDERJIT SINGH (You) </div>
+        <div>Meeting host</div>
+        </div>
+        <div><img src="/static/img/pin_end_black_24dp.svg"></div>
+      </div>
+    </div>
   <div class="sidebar">
     <h2></h2>
   </div>

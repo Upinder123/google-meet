@@ -175,3 +175,46 @@ body {
     margin-top: 200px;
   
 }
+
+
+.people__heading{
+  display: flex;
+  flex-direction: row;
+  vertical-align: top;
+}
+
+.people_remote{
+  display: flex;
+  flex-direction: row;
+}
+.people__btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: none; 
+    border-style: solid;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+    border-radius: 10px;
+}
+
+
+.people__card{
+  display: flex;
+  flex-direction: row;
+}
+.people__card__img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.people__card__name{
+  display: flex;
+  flex-direction: column;
+}
