@@ -18,12 +18,14 @@ body {
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   overflow-x: auto;
-}
-
-.nav__center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav__center {
+  margin-left: 250px !important;
+  margin-right: 250px !important;
   padding-left: 300px;
   padding-right: 300px;
 }
@@ -66,10 +68,6 @@ body {
   transition: background-color 0.1s ease-in-out;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.nav__link--active {
-  color: #009578;
 }
 
 .nav__icon {
@@ -170,8 +168,20 @@ body {
   height: 40px;
 }
 
+.navbar__center__btn:hover {
+  background-color: #484d50;
+  cursor: pointer;
+  cursor: hand;
+}
+
 .navbar__center__btn__red {
   background-color: #ea4335;
+}
+
+.navbar__center__btn__red:hover {
+  background-color: #ec584c;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .profilepic {

@@ -13,11 +13,14 @@ body {
     display: flex;
     flex: 1 1 25%;
     overflow-x: auto;
+    align-items: center;
 }
 .nav__center{
-    align-items: center;
-    padding-left: 300px;
+  margin-left: 250px !important; 
+  margin-right: 250px !important;
+      padding-left: 300px;
     padding-right: 300px;
+
 
 }
 .nav__right{
@@ -30,6 +33,7 @@ body {
   
   }
 .nav__link {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,10 +54,6 @@ body {
 }
 
 
-
-.nav__link--active {
-    color: #009578;
-}
 
 .nav__icon {
     font-size: 18px;
@@ -130,6 +130,11 @@ body {
     white-space: nowrap;
 }
 .navbar__center__btn{
+  &:hover {
+    background-color: lighten(#3c4043, 5%);
+    cursor: pointer;
+    cursor: hand;
+  }
   background-color :#3c4043;
   box-sizing: border-box;
   display: inline-block;
@@ -141,7 +146,13 @@ body {
   font: 400 13.3333px Arial;
   height: 40px;
 }
+
 .navbar__center__btn__red{
+  &:hover {
+    background-color: lighten(#ea4335, 5%);
+    cursor: pointer;
+    cursor: hand;
+  }
   background-color: #ea4335;
 }
 .profilepic{
