@@ -13,16 +13,22 @@
   <div class="profilepic">
     <img class="profilepic__image" src="/static/img/fc48aeb0-d91f-11de-860f-001cc4c002e0.image.jpg" alt="">
   </div>
+  <div id="confirm">
+    <div class="message">Do you want to end the call?</div>
+    <br />
+    <button class="yes">Leave</button>
+    <button class="yes">End meeting</button>
+</div>
 <nav class="nav">
   <div href="#" class="nav__link nav__left">
     <i class="material-icons nav__icon">dashboard</i>
     <span class="nav__text">Dashboard</span>
   </div>
   <div href="#" class="nav__link nav__center">
-    <button href="#" id="mic" class="nav__link navbar__center__btn navbar__center__btn__red" onclick="mic('mic')">
+    <button href="#" id="mic" class="nav__link navbar__center__btn navbar__center__red" onclick="mic('mic')">
         <img id="mic1" src="/static/img/mic_white_24dp.svg">
     </button>
-      <button href="#" id="video" class="nav__link navbar__center__btn navbar__center__btn__red" onclick="video('video')">
+      <button href="#" id="video" class="nav__link navbar__center__btn navbar__center__red" onclick="video('video')">
         <img id="video1" src="/static/img/videocam_white_24dp.svg">
       </button>
       <button href="#" class="nav__link navbar__center__btn">
@@ -34,7 +40,7 @@
       <button  href="#" class="nav__link navbar__center__btn">
         <img src="/static/img/more_vert_white_24dp.svg">
       </button>
-      <button href="#popup" class="nav__link navbar__center__btn navbar__center__btn__red">
+      <button href="#" class="nav__link navbar__center__btn navbar__center__red" onclick="OnConfirm();">
         <img src="/static/img/phone_disabled_white_24dp.svg"> 
       </button>
   </div>
@@ -67,7 +73,7 @@
       <h2>People</h2>
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav('People')">×</a>
       </div>
-      <div class="people_remote">
+      <div class="people__remote">
         <button class="people__btn"><img src="/static/img/mic_off_black_24dp.svg"> <h3>all muted</h3></button>
         <button class="people__btn"><img src="/static/img/group_add_black_24dp.svg"><h3>Add People</h3></button>
         <button class="people__btn"><img src="/static/img/toggle_on_black_24dp.svg"><h3>Host control</h3></button>
@@ -78,15 +84,18 @@
       <div>
         <h4>In call</h4>
       </div>
+      <div>
+        <input class="people__search" type="text" placeholder="Search for people">
+      </div>
       <div class="people__card">
         <div>
-          <img class="people__card__img" src="/static/img/android-chrome-192x192.png" alt="">
+          <img class="people__img" src="/static/img/android-chrome-192x192.png" alt="">
         </div>
-        <div class="people__card__name">
+        <div class="people__name">
         <div>UPINDERJIT SINGH (You) </div>
         <div>Meeting host</div>
         </div>
-        <div><img src="/static/img/pin_end_black_24dp.svg"></div>
+        <div><img class="people__icon" src="/static/img/pin_end_black_24dp.svg"></div>
       </div>
     </div>
   <div class="sidebar">
@@ -100,38 +109,7 @@
     <a href="#">Contact</a>
   </div>
   <div id="Activities" class="sidebar">
-    <div class="sidebar__activities zHGix" role="heading" aria-level="2">Activities <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Activities')">×</a></div>    
-    <ul class="VfPpkd-StrnGf-rymPhb  VfPpkd-StrnGf-rymPhb-OWXEXe-HiaYvf-rymPhb  VfPpkd-StrnGf-rymPhb-OWXEXe-aSi1db-RWgCYc DMZ54e bwNLcf vqjb4e sslT9d" jscontroller="PHUIyb" jsaction="mouseleave:JywGue; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; keydown:I481le" role="listbox" tabindex="0" aria-label="List of available add ons"><li class="rHLKYe VfPpkd-StrnGf-rymPhb-ibnC6b" jsaction="click:o6ZaF; keydown:RDtNu; keyup:JdS61c; focusin:MeMJlc; focusout:bkTmIf;mousedown:teoBgf; mouseup:NZPHBc; mouseenter:SKyDAe; mouseleave:xq3APb; touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8; change:uOgbud" role="option" aria-label="Whiteboarding, Collaboratively brainstorm and sketch ideas" tabindex="0" data-tool-id="9" style="--mdc-ripple-fg-size:216px; --mdc-ripple-fg-scale:1.74597; --mdc-ripple-fg-translate-start:7px, -64px; --mdc-ripple-fg-translate-end:72px, -72px;"><span class="VfPpkd-StrnGf-rymPhb-pZXsl"></span><span class=" VfPpkd-StrnGf-rymPhb-f7MjDc"><div jsaction="rcuQ6b:drtwse;ntQuZe:drtwse;PHhfHc:drtwse" class="GMuzH IlTvAb" jscontroller="bsTKnc" style="display: none;"></div><img alt="" src="https://www.gstatic.com/meet/google-meet-icons_whiteboard-icon_44ebb90da0e177ad2a47be47dccc81ae.svg" class="ERCYJc NCaoKd" data-iml="920161.2000000002"></span><span class=" VfPpkd-StrnGf-rymPhb-b9t22c"><span jsname="K4r5Ff" class=" VfPpkd-StrnGf-rymPhb-fpDzbe-fmcmS WPeMgd">Whiteboarding</span><span jsname="uyy0gb" class=" VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS KrefDd">Collaboratively brainstorm and sketch ideas</span></span></li></ul>
   </div>
-  <div id="Info"class="sidebar">
-    <div>
-        <div class="Meeting">Meeting details
-
-        </div>
-        <div>
-            <div>
-            <span>
-            <button>
-                <div>
-
-                </div><i>close</i>
-            </button>
-            <div class="EY8ABd-OWXEXe-TAWMXe"><a href="javascript:void(0)" class="closebtn" onclick="closeNav('Info')">×</a></div>
-        </span>
-    </div>
-</div>
-</div>
-<div>
-    <div>
-        <div>
-
-        </div><div>
-            <div>Joining info</div>
-            <div>
-                <div>https://meet.google.com/gtf-kxwu-ikf</div>
-            </div><div>
-                <div>
-                    <button ><div></div><div></div><i>content_copy</i><span>Copy joining info</span></button></div></div></div></div><div></div><div ><div>Google Calendar attachments show up here</div></div></div></div>
   <script>
   function mic(id){
     var color = document.getElementById(id).style.backgroundColor;
@@ -173,8 +151,18 @@
     document.getElementById(id).style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+  function OnConfirm(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function () {
+                confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+        }
   </script>
-     
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </body>
   </html> 
   
