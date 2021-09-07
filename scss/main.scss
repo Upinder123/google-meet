@@ -8,7 +8,6 @@ body {
     margin: 0 0 55px 0;
     background-color:rgba(0,0,0,0.87);
     width: 100%;
-    height: 100%;
 }
 h2{
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
@@ -430,6 +429,8 @@ h4{
   padding:5px;
   width: 60px;
   display: block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .navbar_expand{
   display: none;
