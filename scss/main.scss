@@ -75,6 +75,17 @@ body {
       display: none;
     }
 }
+@media screen and (max-width: 436px) {
+  .nav__center{
+    margin-left: 0px !important; 
+    margin-right: 0px !important;
+    padding-left: 150px;
+    padding-right: 300px;  
+  }
+  .nav__text{
+    display: none;
+  }
+}
 
 
 .nav__icon {
@@ -92,7 +103,7 @@ body {
     transition: 0.5s;
     padding-top: 60px;
     border-radius: 10px;
-    padding-left: 15px;
+    padding-left: 0px;
   }
   
   .sidebar a {
