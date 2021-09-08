@@ -473,3 +473,20 @@ input{
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
 
 }
+.people__icon{
+  &:hover {
+    background-color: lighten(#dadce0, 5%);
+    cursor: pointer;
+    cursor: hand;
+  }
+  background-color :#fff;
+  box-sizing: border-box;
+  display: inline-block;
+  border:1px solid #dadce0;
+  border-radius: 50%;
+  border-width: 0;
+  padding: 8px;
+  font-size: 24px;
+  font: 400 13.3333px Arial;
+  height: 40px;
+}
