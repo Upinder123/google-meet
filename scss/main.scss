@@ -1,5 +1,6 @@
 $white: #fff;
 $red:#ea4335;
+
 html{
   width: 100%;
   height: 100%;
@@ -31,7 +32,15 @@ h4{
     letter-spacing: 0;
     line-height: 1.5rem;
 }
+p{
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 
+}
+::placeholder {
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+
+
+}
 .nav {
     position: fixed;
     bottom: 0;
@@ -197,7 +206,7 @@ h4{
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: #000;
   }
   
   .sidebar .closebtn {
@@ -206,6 +215,12 @@ h4{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    margin-top: 15px;
+  }
+  .closebtn{
+    &hover{
+      color: #000;
+    }
   }
   
   .openbtn {
@@ -330,6 +345,8 @@ h4{
 .people__remote{
   display: flex;
   flex-direction: row;
+  align-content: center;
+
 }
 .people__btn{
 
@@ -359,7 +376,7 @@ h4{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 .people__name{
   display: flex;
@@ -396,7 +413,7 @@ h4{
 #confirm {
   display: none;
   background-color: white;
-  color: #000000;
+  color: #000;
   border: 1px solid white;
   position: fixed;
   width: 370px;
@@ -417,12 +434,16 @@ h4{
       border: 4px solid white;
       padding: 5px;
       text-align: center;
-      width: 60px;
+      width: 120px;
       cursor: pointer;
   }
 
   #confirm .message {
       text-align: left;
+      margin-top: 5px;
+      font-family: 'Google Sans',Roboto,Arial,sans-serif;
+      font-size: 20px;
+      font-weight: 500;
   }
 .endcall{
   border-radius: 20px;
@@ -441,4 +462,14 @@ h4{
     display: block;
     
   }
+}
+.messagebox_text{
+  color: #1a73e8;
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+input{
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+
 }
