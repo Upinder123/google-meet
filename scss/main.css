@@ -85,22 +85,22 @@ p {
 }
 
 .nav__center {
-  margin-left: 250px !important;
-  margin-right: 250px !important;
-  padding-left: 300px;
-  padding-right: 300px;
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .nav__right {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  padding-left: 125px;
 }
 
 .nav__left {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-right: 125px;
+  margin-right: 100px;
 }
 
 .nav__link {
@@ -133,10 +133,10 @@ p {
 
 @media screen and (max-width: 1000px) {
   .nav__center {
-    margin-left: 150px !important;
-    padding-left: 150px;
+    margin-left: px !important;
+    padding-left: 100px;
     margin-right: 0px !important;
-    padding-right: 300px;
+    padding-right: 100px;
   }
   .nav__text {
     display: none;
@@ -145,7 +145,7 @@ p {
 
 @media screen and (max-width: 792px) {
   .nav__center {
-    margin-left: 150px !important;
+    margin-left: 0px !important;
     padding-left: 150px;
     margin-right: 0px !important;
     padding-right: 300px;
@@ -221,19 +221,21 @@ p {
 }
 
 .sidebar {
-  height: 88%;
+  height: 84%;
   width: 0;
   position: fixed;
   z-index: 1;
+  margin-top: 10px;
   top: 0;
   right: 0;
   background-color: white;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding-top: 20px;
+  padding-top: 5px;
   border-radius: 10px;
   padding-left: 0px;
+  margin-right: 15px;
 }
 
 .sidebar a {
@@ -262,7 +264,7 @@ p {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .closebtnhover {
@@ -334,11 +336,11 @@ p {
 }
 
 .navbar__center__red {
-  background-color: red;
+  background-color: #ea4335;
 }
 
 .navbar__center__red:hover {
-  background-color: #ff1a1a;
+  background-color: #ec584c;
   cursor: pointer;
   cursor: hand;
 }
@@ -402,7 +404,7 @@ p {
 }
 
 .people__heading {
-  padding-left: 10px;
+  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,6 +425,7 @@ p {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-left: 20px;
 }
 
 .people__btn {
@@ -484,7 +487,7 @@ p {
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .people__icon:hover {
@@ -492,14 +495,21 @@ p {
 }
 
 .people__incall {
-  padding-left: 10px;
+  padding-left: 20px;
+  margin-top: 0px;
+  font-size: 14px;
 }
 
 .people__search {
   padding: 10PX;
-  padding-right: 140px;
+  padding-right: 100px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
+  height: 36px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 17px;
 }
 
 .people__div {
@@ -603,5 +613,53 @@ input {
 
 .nav_text {
   color: #fff;
+}
+
+.dropup__content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  bottom: 70px;
+  z-index: 5;
+  right: 20px;
+  padding: 15px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.dropup__navlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.dropup__text {
+  font-family: Roboto,Arial,sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: .00625em;
+  font-weight: 400;
+  color: #000;
+  color: var(--mdc-theme-on-surface, #000);
+}
+
+.dropup__img {
+  padding-right: 25px;
+}
+
+.meeting_text {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.nav__text {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
 }
 /*# sourceMappingURL=main.css.map */
