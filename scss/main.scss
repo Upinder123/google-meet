@@ -83,6 +83,13 @@ p{
     padding-left: 0px;
     padding-right: 300px;
 }
+.nav__right{
+  display: none;
+
+}
+.nav__left{
+display: none;
+}
 }
 .nav__center{
   margin-left: 200px !important; 
@@ -151,11 +158,19 @@ p{
   .nav__center{
     margin-left: 0px !important; 
     margin-right: 0px !important;
-    padding-left: 200px;
+    padding-left: 250px;
     padding-right: 300px;  
   }
   .nav__text{
     display: none;
+  }
+  .nav__right{
+    display: none;
+  
+  }
+.nav__left{
+  display: none;
+  
   }
 }
 @media only screen and (max-width: 360px) {
