@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="/scss/main.css">
 </head>
 
-<body>
+<body id="body">
 
-  <!-- your content here... -->
+  <div id="mic_status" class="mic__status">
+    <img  class="mute_up" src="/static/img/mic_off_white_24dp.svg">
+    </div>
   <div class="profilepic">
     <img class="profilepic__image" src="/static/img/fc48aeb0-d91f-11de-860f-001cc4c002e0.image.jpg" alt="">
   </div>
   <div id="confirm">
     <div class="message">Do you want to end the call?</div>
     <br />
-    width: 140px;
 
     <button class="yes" onclick="leave()"><div class="messagebox_text">Leave</div></button>
     <button class="yes" onclick="leave()"><div class="messagebox_text">End meeting</div></button>
@@ -42,6 +43,11 @@
     </a>
   </div>
 </div>
+
+<div class="You">
+  <p>You</p>
+</div>
+
 <nav class="nav">
   <div href="#" class="nav__link nav__left">
     <span class="nav__text">21:21</span>
@@ -111,7 +117,7 @@
 
       </div>
       <div>
-        <input class="people__search" type="text" placeholder="Search for people">
+        <input class="people__search" type="text" placeholder="  Search for people">
       </div>
       <div>
         <h4 class="people__incall">In call</h4>
@@ -176,13 +182,20 @@
   function openNav(id) {
     document.getElementById("dropup").style.display="none";
     document.getElementById('submenu').src="/static/img/expand_less_white_24dp.svg";
+    document.getElementById('mic_status').style.right="390px";
+    document.getElementById('body').style.width="80%";
+
     document.getElementById(id).style.width = "370px";
     document.getElementById("main").style.marginLeft = "370px";
   }
   
   function closeNav(id) {
+    document.getElementById('mic_status').style.right="20px";
+    document.getElementById('body').style.width="100%";
+
     document.getElementById(id).style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+
   }
   function submenu() {
         if(document.getElementById("dropup").style.display=="none" || document.getElementById("dropup").style.display=="" ){
