@@ -140,7 +140,7 @@ display: none;
     padding-right: 100px;  
   }
   .nav__text{
-    display: none;
+    display: block;
   }
 }
 @media screen and (max-width: 792px) {
@@ -151,7 +151,7 @@ display: none;
     padding-right: 300px;  
   }
   .nav__text{
-    display: none;
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -162,6 +162,9 @@ display: none;
     padding-right: 300px;  
   }
   .nav__text{
+    display: none;
+  }
+  .nav_hide_text{
     display: none;
   }
   .nav__right{
@@ -267,7 +270,7 @@ display: none;
   }
   @media only screen and (max-width: 1500px) {
     .sidebar{
-    height: 84%;
+    height: 86%;
     }
   }
   .sidebar a {

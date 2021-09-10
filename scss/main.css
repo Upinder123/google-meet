@@ -173,7 +173,7 @@ p {
     padding-right: 100px;
   }
   .nav__text {
-    display: none;
+    display: block;
   }
 }
 
@@ -185,7 +185,7 @@ p {
     padding-right: 300px;
   }
   .nav__text {
-    display: none;
+    display: block;
   }
 }
 
@@ -197,6 +197,9 @@ p {
     padding-right: 300px;
   }
   .nav__text {
+    display: none;
+  }
+  .nav_hide_text {
     display: none;
   }
   .nav__right {
@@ -299,7 +302,7 @@ p {
 
 @media only screen and (max-width: 1500px) {
   .sidebar {
-    height: 84%;
+    height: 86%;
   }
 }
 
