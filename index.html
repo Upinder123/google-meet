@@ -109,18 +109,18 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav('People')">×</a>
       </div>
       <div class="people__remote">
-        <button class="people__btn"><img src="/static/img/mic_off_black_24dp.svg"> <h3>all muted</h3></button>
-        <button class="people__btn"><img src="/static/img/group_add_black_24dp.svg"><h3>Add People</h3></button>
-        <button class="people__btn"><img src="/static/img/toggle_on_black_24dp.svg"><h3>Host control</h3></button>
+        <button class="people__btn"><img class="nav__btnclr" src="/static/img/mic_off_black_24dp.svg"> <h3>All muted</h3></button>
+        <button class="people__btn"><img class="nav__btnclr" src="/static/img/group_add_black_24dp.svg"><h3>Add People</h3></button>
+        <button class="people__btn"><img class="nav__btnclr" src="/static/img/toggle_on_black_24dp.svg"><h3>Host control</h3></button>
       </div>
       <div>
 
       </div>
       <div>
-        <input class="people__search" type="text" placeholder="  Search for people">
+        <input class="people__search " type="text" placeholder="  Search for people">
       </div>
       <div>
-        <h4 class="people__incall">In call</h4>
+        <h4 class="people__incall nav__btnclr">In call</h4>
       </div>
       <div class="people__card">
         <div>
@@ -128,11 +128,11 @@
         </div>
         <div class="people__name">
         <div class="people__div"><p class="people__text">UPINDERJIT SINGH (You)</p></div>
-        <div class="people__div"><p class="people__text meeting_text">Meeting host</p></div>
+        <div class="people__div"><p class="people__text meeting_text nav__btnclr">Meeting host</p></div>
         </div>
         
-        <div><img class="people__icon" src="/static/img/mic_off_black_24dp.svg"></div>
-        <div><img class="people__icon" src="/static/img/pin_end_black_24dp.svg"></div>
+        <div><img class="people__ic nav__btnclr" src="/static/img/mic_off_black_24dp.svg"></div>
+        <div><img class="people__ic nav__btnclr" src="/static/img/pin_end_black_24dp.svg"></div>
 
       </div>
     </div>
@@ -186,7 +186,6 @@
     document.getElementById('body').style.width="75%";
 
     document.getElementById(id).style.width = "370px";
-    document.getElementById("main").style.marginLeft = "370px";
   }
   
   function closeNav(id) {
@@ -194,7 +193,6 @@
     document.getElementById('body').style.width="100%";
 
     document.getElementById(id).style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
 
   }
   function submenu() {

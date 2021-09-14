@@ -23,6 +23,7 @@ h3 {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
+  color: #202124;
 }
 
 h4 {
@@ -125,6 +126,11 @@ p {
   padding-right: 150px;
 }
 
+.nav__btnclr {
+  -webkit-filter: invert(38%) sepia(6%) saturate(406%) hue-rotate(173deg) brightness(99%) contrast(93%);
+          filter: invert(38%) sepia(6%) saturate(406%) hue-rotate(173deg) brightness(99%) contrast(93%);
+}
+
 .nav__right {
   padding-left: 125px;
 }
@@ -165,6 +171,18 @@ p {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+  .nav__center {
+    margin-left: 0px !important;
+    padding-left: 100px;
+    margin-right: 0px !important;
+    padding-right: 100px;
+  }
+  .nav__text {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .nav__center {
     margin-left: 0px !important;
@@ -186,6 +204,9 @@ p {
   }
   .nav__text {
     display: block;
+  }
+  .nav__right {
+    display: none;
   }
 }
 
@@ -556,10 +577,15 @@ p {
       -ms-grid-row-align: left;
       align-self: left;
   margin-left: 10px;
+  border-radius: 5px;
 }
 
-.people__icon:hover {
-  background-color: #ebebeb;
+.people__ic {
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  margin: 15px;
+  margin-top: 0px;
 }
 
 .people__incall {
@@ -642,7 +668,7 @@ p {
   background-color: transparent;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 792px) {
   .navbar_expand {
     display: block;
   }
