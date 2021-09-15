@@ -1,12 +1,16 @@
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  /* Hide scrollbars */
 }
 
 body {
   margin: 0 0 55px 0;
   background-color: rgba(0, 0, 0, 0.87);
   width: 100%;
+  overflow: hidden;
+  /* Hide scrollbars */
 }
 
 h2 {
@@ -19,7 +23,6 @@ h2 {
 
 h3 {
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
-  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
@@ -99,6 +102,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,8 +110,8 @@ p {
     height: 105px;
   }
   .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px ;
+    margin-right: 0px ;
     padding-left: 0px;
     padding-right: 300px;
   }
@@ -120,8 +124,8 @@ p {
 }
 
 .nav__center {
-  margin-left: 200px !important;
-  margin-right: 200px !important;
+  margin-left: 200px ;
+  margin-right: 200px ;
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -170,36 +174,102 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1920px) {
   .nav__center {
-    margin-left: 0px !important;
+    margin-left: 200px;
+    padding-left: 250px;
+    margin-right: 150px;
+    padding-right: 150px;
+  }
+  .nav__text {
+    display: block;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .nav__center {
+    margin-left: 200px;
     padding-left: 100px;
-    margin-right: 0px !important;
+    margin-right: 150px;
     padding-right: 100px;
   }
   .nav__text {
     display: block;
   }
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
   .nav__center {
-    margin-left: 0px !important;
+    margin-left: 200px;
     padding-left: 100px;
-    margin-right: 0px !important;
+    margin-right: 200px;
     padding-right: 100px;
   }
   .nav__text {
     display: block;
   }
+  .nav__left{
+    padding-right: 75px ;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .nav__center {
+    margin-left: 0px;
+    padding-left: 100px;
+    margin-right: 0px;
+    padding-right: 100px;
+  }
+  .nav__text {
+    display: block;
+  }
+  .nav__text {
+    display: block;
+  }
+  .nav__left{
+    padding-right: 100px ;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav__center {
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+  }
+  .nav__text {
+    display: block;
+  }
+  .nav__right {
+    padding-left: 0px;
+  }
+  .nav__left{
+    padding-right: 50px ;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav__center {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .nav__text {
+    display: block;
+  }
+  .nav__right {
+    padding-left:0px ;
+  }
+  .nav__left{
+    padding-right:0px ;
+
+  }
+
 }
 
 @media screen and (max-width: 792px) {
   .nav__center {
-    margin-left: 0px !important;
+    margin-left: 0px ;
     padding-left: 150px;
-    margin-right: 0px !important;
+    margin-right: 0px ;
     padding-right: 300px;
   }
   .nav__text {
@@ -212,8 +282,8 @@ p {
 
 @media screen and (max-width: 600px) {
   .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px ;
+    margin-right: 0px ;
     padding-left: 250px;
     padding-right: 300px;
   }
@@ -233,8 +303,8 @@ p {
 
 @media only screen and (max-width: 360px) {
   .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px ;
+    margin-right: 0px ;
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -252,8 +322,8 @@ p {
 
 @media only screen and (max-width: 414px) {
   .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px ;
+    margin-right: 0px ;
     padding-left: 190px;
     padding-right: 190px;
   }
@@ -274,6 +344,7 @@ p {
     left: 20px;
     right: -0.5px;
     font-size: 15px;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
   }
   .mic__status {
     width: 18px;
@@ -286,8 +357,8 @@ p {
 
 @media only screen and (max-width: 320px) {
   .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px ;
     padding-left: 150px;
     padding-right: 190px;
   }
@@ -493,6 +564,7 @@ p {
 }
 
 .people__heading {
+  padding-bottom:10px ;
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,8 +629,8 @@ p {
 
 .people__img {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin-right: 15px;
 }
 
@@ -757,6 +829,7 @@ input {
   color: #fff;
   font-size: 18px;
   margin: 5px;
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
 
 input {
