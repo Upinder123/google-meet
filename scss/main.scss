@@ -142,102 +142,7 @@ display: none;
     margin-left: 10px;
     margin-right: 10px;
 }
-@media screen and (max-width: 1300px) {
-  .nav__center{
-    margin-left: 0px !important;
-    padding-left: 100px;
-    margin-right: 0px !important;
-    padding-right: 100px;  
-  }
-  .nav__text{
-    display: block;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .nav__center{
-    margin-left: 0px !important;
-    padding-left: 100px;
-    margin-right: 0px !important;
-    padding-right: 100px;  
-  }
-  .nav__text{
-    display: block;
-  }
-}
-@media screen and (max-width: 792px) {
-  .nav__center{
-    margin-left: 0px !important;
-    padding-left: 150px;
-    margin-right: 0px !important;
-    padding-right: 300px;  
-  }
-  .nav__text{
-    display: block;
-  }
-  .nav__right{
-    display: none;
-  
-  }
-}
-@media screen and (max-width: 600px) {
-  .nav__center{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    padding-left: 250px;
-    padding-right: 300px;  
-  }
-  .nav__text{
-    display: none;
-  }
-  .nav_hide_text{
-    display: none;
-  }
-  .nav__right{
-    display: none;
-  
-  }
-.nav__left{
-  display: none;
-  
-  }
-}
-@media only screen and (max-width: 360px) {
-  .nav__center{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    padding-left: 150px;
-    padding-right: 150px;  
-  }
-  
-  .nav__right{
-    display: none;
-  
-  }
-.nav__left{
-  display: none;
-  
-  }
-  .navbar__center__btn{
-  margin-left: 3px;
-  margin-right: 3px;
-}
-}
 
-@media only screen and (max-width: 414px) {
-  .nav__center{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    padding-left: 190px;
-    padding-right: 190px;  
-
-  }
-  .nav__right{
-    display: none;
-  
-  }
-.nav__left{
-  display: none;
-}
 .You{
   display: block;
   color: #FFF;
@@ -256,23 +161,7 @@ display: none;
   position: absolute;
 
 }
-}
-@media only screen and (max-width: 320px) {
-  .nav__center{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    padding-left: 150px;
-    padding-right: 190px;  
-  }
-  .nav__right{
-    display: none;
-  
-  }
-.nav__left{
-  display: none;
-  
-}
-}
+
 
 .nav__icon {
     font-size: 18px;
@@ -684,3 +573,114 @@ input {
 
   width: 200px;
 }
+.navbares{
+  position: fixed;
+  bottom: 25px;
+  right: 0;
+}
+
+.nav__left{
+  position:absolute;
+  bottom: 25px;
+  left:0px
+}
+.nav__center{
+  position: absolute;
+  right:41%;
+  margin: 0 !important;
+  padding: 0 !important;
+
+
+}
+@media screen and (max-width: 1300px) {
+  .nav__center{
+    position: absolute;
+    right:37%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav__text{
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav__center{
+    position: absolute;
+    right:36%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav__text{
+    display: block;
+  }
+}
+@media screen and (max-width: 792px) {
+  .nav__center{
+    position: absolute;
+    right:20%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav__text{
+    display: block;
+  }
+  .nav__right{
+    display: none;
+  
+  }
+  .nav__left{
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav__center{
+    position: absolute;
+    right:6%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav__text{
+    display: none;
+  }
+  .nav_hide_text{
+    display: none;
+  }
+  .nav__right{
+    display: none;
+  
+  }
+.nav__left{
+  display: none;
+  
+  }
+}
+@media only screen and (max-width: 414px) {
+  .nav__center{
+    position: absolute;
+    right:1%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav__right{
+    display: none;
+  
+  }
+.nav__left{
+  display: none;
+  
+  }
+  .navbar__center__btn{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+}
+
+@media only screen and (max-width: 414px) {
+  .nav__center{
+    position: absolute;
+    right:1%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+  }}
