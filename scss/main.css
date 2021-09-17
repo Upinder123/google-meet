@@ -3,6 +3,7 @@ html {
   height: 100%;
   overflow: hidden;
   /* Hide scrollbars */
+  font-family: 'Google Sans',Roboto,Arial,sans-serif !important;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 }
 
 h2 {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -22,7 +22,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -31,15 +30,10 @@ h3 {
 }
 
 h4 {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
-}
-
-p {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -105,7 +99,7 @@ p {
           align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav {
     height: 105px;
   }
@@ -187,7 +181,6 @@ p {
   left: 20px;
   right: -0.5px;
   font-size: 15px;
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
 
 .mic__status {
@@ -220,7 +213,7 @@ p {
   margin-right: 15px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1380px) {
   .sidebar {
     height: 86%;
   }
@@ -236,7 +229,7 @@ p {
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav__icon {
     font-size: 0px;
   }
@@ -279,7 +272,7 @@ p {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 550px) {
   .sidebar {
     padding-top: 15px;
   }
@@ -356,7 +349,7 @@ p {
   margin-top: 320px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1214px) {
   .profilepic__image {
     width: 40%;
     margin-top: 350px;
@@ -370,21 +363,21 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .profilepic__image {
     width: 90%;
     margin-top: 300px;
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 550px) {
   .profilepic__image {
     width: 60%;
     margin-top: 270px;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 365px) {
   .profilepic__image {
     width: 90%;
     margin-top: 250px;
@@ -494,7 +487,7 @@ p {
 }
 
 .people__search {
-  padding: 10PX;
+  padding: 10px;
   padding-right: 100px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -548,7 +541,6 @@ p {
 #confirm .message {
   text-align: left;
   margin-top: 5px;
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -634,7 +626,6 @@ input {
 }
 
 .dropup__text {
-  font-family: Roboto,Arial,sans-serif;
   line-height: 1.5rem;
   font-size: 1rem;
   letter-spacing: .00625em;
@@ -691,7 +682,7 @@ input {
   padding: 0 !important;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1380px) {
   .nav__center {
     position: absolute;
     right: 37%;
@@ -703,7 +694,7 @@ input {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 906px) {
   .nav__center {
     position: absolute;
     right: 36%;
@@ -715,7 +706,7 @@ input {
   }
 }
 
-@media screen and (max-width: 792px) {
+@media screen and (max-width: 768px) {
   .nav__center {
     position: absolute;
     right: 20%;
@@ -733,7 +724,7 @@ input {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .nav__center {
     position: absolute;
     right: 6%;
