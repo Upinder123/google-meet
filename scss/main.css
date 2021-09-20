@@ -706,6 +706,24 @@ input {
   }
 }
 
+@media screen and (max-width: 799px) {
+  .nav__center {
+    position: absolute;
+    right: 20%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav__text {
+    display: none;
+  }
+  .nav__right {
+    display: none;
+  }
+  .nav__left {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav__center {
     position: absolute;
@@ -714,7 +732,7 @@ input {
     padding: 0 !important;
   }
   .nav__text {
-    display: block;
+    display: none;
   }
   .nav__right {
     display: none;
