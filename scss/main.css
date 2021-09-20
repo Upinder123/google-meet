@@ -26,7 +26,6 @@ h3 {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
-  color: #202124;
 }
 
 h4 {
@@ -271,7 +270,6 @@ h4 {
   padding: 16px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 550px) {
   .sidebar {
     padding-top: 15px;
@@ -282,11 +280,11 @@ h4 {
 }
 
 .sidebar__activities {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5rem;
+  letter-spacing: 0;
   box-flex: 1;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -365,7 +363,7 @@ h4 {
 
 @media only screen and (max-width: 768px) {
   .profilepic__image {
-    width: 90%;
+    width: 40%;
     margin-top: 300px;
   }
 }
@@ -626,10 +624,10 @@ input {
 }
 
 .dropup__text {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  letter-spacing: .00625em;
+  font-size: 1.125rem;
   font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5rem;
   color: #000;
   color: var(--mdc-theme-on-surface, #000);
 }
@@ -685,9 +683,11 @@ input {
 @media screen and (max-width: 1380px) {
   .nav__center {
     position: absolute;
-    right: 37%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 37%;
   }
   .nav__text {
     display: block;
@@ -697,9 +697,11 @@ input {
 @media screen and (max-width: 906px) {
   .nav__center {
     position: absolute;
-    right: 36%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 36%;
   }
   .nav__text {
     display: block;
@@ -709,9 +711,11 @@ input {
 @media screen and (max-width: 799px) {
   .nav__center {
     position: absolute;
-    right: 20%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 20%;
   }
   .nav__text {
     display: none;
@@ -727,9 +731,11 @@ input {
 @media screen and (max-width: 768px) {
   .nav__center {
     position: absolute;
-    right: 20%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 20%;
   }
   .nav__text {
     display: none;
@@ -745,9 +751,11 @@ input {
 @media screen and (max-width: 550px) {
   .nav__center {
     position: absolute;
-    right: 6%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 6%;
   }
   .nav__text {
     display: none;
@@ -766,9 +774,11 @@ input {
 @media only screen and (max-width: 414px) {
   .nav__center {
     position: absolute;
-    right: 1%;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .nav__center {
+    right: 1%;
   }
   .nav__right {
     display: none;
@@ -779,15 +789,6 @@ input {
   .navbar__center__btn {
     margin-left: 3px;
     margin-right: 3px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .nav__center {
-    position: absolute;
-    right: 1%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,41 +1,33 @@
 $white: #fff;
 $red:#ea4335;
-
+$black:#000;
 html{
   width: 100%;
   height: 100%;
   overflow: hidden; /* Hide scrollbars */
   font-family: 'Google Sans',Roboto,Arial,sans-serif !important;
-
+}
+@mixin font{
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5rem;
 }
 body {
     margin: 0 0 55px 0;
     background-color:rgba(0,0,0,0.87);
     width: 100%;
     overflow: hidden; /* Hide scrollbars */
-
 }
 h2{
-  font-size: 1.125rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5rem;
+  @include font;
 }
 h3{
-  font-size: 1.125rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  color: #202124;
+  @include font;
 }
-
 h4{
-  font-size: 1.125rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5rem;
+  @include font;
 }
-
 ::placeholder {
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
@@ -55,7 +47,6 @@ h4{
   width: 18px;
   display: flex;
   position: absolute;
-
   top: 20px;
 }
 .mute_up{
@@ -84,26 +75,22 @@ h4{
 }
 .nav__right{
   display: none;
-
 }
 .nav__left{
 display: none;
-}
+  }
 }
 .nav__center{
   margin-left: 200px !important; 
   margin-right: 200px !important;
   padding-left: 150px;
   padding-right: 150px;
-
-
 }
 .nav__btnclr{
   filter: invert(38%) sepia(6%) saturate(406%) hue-rotate(173deg) brightness(99%) contrast(93%);
 }
 .nav__right{
   padding-left:125px ;
-  
   }
 .nav__left{
   align-items: flex-start;
@@ -112,7 +99,6 @@ display: none;
   padding-left: 10px;  
   }
 .nav__link {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,7 +115,6 @@ display: none;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .You{
   display: block;
   color: $white;
@@ -144,10 +129,9 @@ display: none;
   width: 18px;
   display: flex;
   position: absolute;
-
 }
 .nav__icon {
-    font-size: 18px;
+  font-size: 18px;
 }
 .sidebar {
   height: 88%;
@@ -178,17 +162,14 @@ display: none;
   display: block;
   transition: 0.3s;
   }
-
 @media only screen and (max-width: 768px) {
     .nav__icon{
       font-size: 0px;
     }
   }
-  
   .sidebar a:hover {
-    color: #000;
+    color: $black;
   }
-  
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -199,10 +180,9 @@ display: none;
   }
   .closebtn{
     &hover{
-      color: #000;
+      color: $black;
     }
   }
-  
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -211,28 +191,20 @@ display: none;
   padding: 10px 15px;
   border: none;
   }
-  
 .openbtn:hover {
   background-color: #444;
   }
-  
 #main {
   transition: margin-left .5s;
   padding: 16px;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 550px) {
+@media screen and (max-height: 550px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-    
 .sidebar__activities {
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
+  @include font;
   letter-spacing: 0;
-  line-height: 1.5rem;
   box-flex: 1;
   flex-grow: 1;
   overflow: hidden;
@@ -256,7 +228,6 @@ display: none;
   font: 400 13.3333px Arial;
   height: 40px;
 }
-
 .navbar__center__red{
   &:hover {
     background-color: lighten($red, 5%);
@@ -265,22 +236,19 @@ display: none;
   }
   background-color:$red;
 }
-.profilepic{
+@mixin profile{
   align-items: center;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.profilepic{
+  @include profile;
   width: 50%;
-    
-  
 }
 .profilepic__image{
-  align-items: center;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @include profile;
   width: 20%;
   margin-top: 320px;
   
@@ -299,7 +267,7 @@ display: none;
 }
 @media only screen and (max-width: 768px) {
   .profilepic__image{
-    width: 90%;
+    width:40%;
     margin-top: 300px;
   }
 }
@@ -321,13 +289,11 @@ display: none;
   flex-direction: row;
   vertical-align: top;
 }
-
 .people__remote{
   display: flex;
   flex-direction: row;
   align-content: center;
   padding-left: 20px;
-
 }
 .people__btn{
 
@@ -340,13 +306,11 @@ display: none;
   border-color: $white;
   box-shadow: none; 
   border-style: solid;
+  border-radius: 10px;
   &:hover{
     background-color: #ebebeb;
   }
-    border-radius: 10px;
 }
-
-
 .people__card{
   padding-left: 10px;
   display: flex;
@@ -366,8 +330,6 @@ display: none;
   align-self: left;
   margin-left: 10px;
   border-radius: 5px;
-
-
 }
 .people__ic{
   align-self: left;
@@ -415,7 +377,6 @@ display: none;
   text-align: right;
   border-radius: 10px;
 }
-
 #confirm button {
   background-color: $white;
   display: inline-block;
@@ -426,7 +387,6 @@ display: none;
   width: 120px;
   cursor: pointer;
   }
-
 #confirm .message {
   text-align: left;
   margin-top: 5px;
@@ -458,7 +418,6 @@ display: none;
 }
 input{
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
-
 }
 .people__icon{
   &:hover {
@@ -480,7 +439,6 @@ input{
 .nav_text{
   color: $white;
 }
-
 .dropup__content{
   display: none;
   position: absolute;
@@ -502,12 +460,9 @@ input{
   justify-content: flex-start;
 }
 .dropup__text{
-  line-height: 1.5rem;
-  font-size: 1rem;
-  letter-spacing: .00625em;
-  font-weight: 400;
-  color: #000;
-  color: var(--mdc-theme-on-surface,#000);
+@include font;
+  color: $black;
+  color: var(--mdc-theme-on-surface,$black);
 }
 .dropup__img{
   padding-right: 25px;
@@ -521,7 +476,6 @@ input{
   font-size: 18px;
   margin:5px;
   font-family: 'Google Sans',Roboto,Arial,sans-serif;
-
 }
 input {
   background-image: url(/static/img/search.svg);
@@ -545,7 +499,6 @@ input {
   bottom: 25px;
   right: 0;
 }
-
 .nav__left{
   position:absolute;
   bottom: 25px;
@@ -556,72 +509,64 @@ input {
   right:41%;
   margin: 0 !important;
   padding: 0 !important;
-
-
+}
+@mixin nav__center {
+  .nav__center{
+  position: absolute;
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+}
+@mixin none{
+  .nav__right{
+    display: none;
+  }
+  .nav__left{
+    display: none;
+  }
 }
 @media screen and (max-width: 1380px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:37%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .nav__text{
     display: block;
   }
 }
 @media screen and (max-width: 906px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:36%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .nav__text{
     display: block;
   }
 }
 @media screen and (max-width: 799px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:20%;
-    margin: 0 !important; 
-    padding: 0 !important;
   }
   .nav__text{
     display: none;
   }
-  .nav__right{
-    display: none;
-  }
-  .nav__left{
-    display: none;
-  }
+  @include none;
 }
-
 @media screen and (max-width: 768px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:20%;
-    margin: 0 !important; 
-    padding: 0 !important;
   }
   .nav__text{
     display: none;
   }
-  .nav__right{
-    display: none;
-  }
-  .nav__left{
-    display: none;
-  }
+  @include none;
 }
 @media screen and (max-width: 550px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:6%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .nav__text{
     display: none;
@@ -629,41 +574,16 @@ input {
   .nav_hide_text{
     display: none;
   }
-  .nav__right{
-    display: none;
-  
-  }
-  .nav__left{
-    display: none;
-  }
+  @include none;
 }
 @media only screen and (max-width: 414px) {
+  @include nav__center;
   .nav__center{
-    position: absolute;
     right:1%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
-
-  .nav__right{
-    display: none;
-  
-  }
-  .nav__left{
-    display: none;
-  }
+  @include none;
   .navbar__center__btn{
     margin-left: 3px;
     margin-right: 3px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .nav__center{
-    position: absolute;
-    right:1%;
-    margin: 0 !important;
-    padding: 0 !important;
-
   }
 }
