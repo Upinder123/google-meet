@@ -98,24 +98,6 @@ h4 {
           align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .nav {
-    height: 105px;
-  }
-  .nav__center {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    padding-left: 0px;
-    padding-right: 300px;
-  }
-  .nav__right {
-    display: none;
-  }
-  .nav__left {
-    display: none;
-  }
-}
-
 .nav__center {
   margin-left: 200px !important;
   margin-right: 200px !important;
@@ -474,8 +456,7 @@ h4 {
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
-  margin: 15px;
-  margin-top: 0px;
+  margin: 0px 15px 15px 15px;
 }
 
 .people__incall {
@@ -487,8 +468,7 @@ h4 {
 .people__search {
   padding: 10px;
   padding-right: 100px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 0px 0px 20px 20px;
   height: 36px;
   border-radius: 4px;
   -webkit-box-shadow: none;
@@ -645,7 +625,6 @@ input {
   color: #fff;
   font-size: 18px;
   margin: 5px;
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
 
 input {
@@ -736,6 +715,7 @@ input {
   }
   .nav__center {
     right: 20%;
+    height: 105px;
   }
   .nav__text {
     display: none;

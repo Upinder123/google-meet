@@ -63,23 +63,6 @@ h4{
     overflow-x: auto;
     align-items: center;
 }
-@media only screen and (max-width: 768px) {
-  .nav{
-    height: 105px;
-  }
-  .nav__center{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    padding-left: 0px;
-    padding-right: 300px;
-}
-.nav__right{
-  display: none;
-}
-.nav__left{
-display: none;
-  }
-}
 .nav__center{
   margin-left: 200px !important; 
   margin-right: 200px !important;
@@ -295,7 +278,6 @@ display: none;
   padding-left: 20px;
 }
 .people__btn{
-
   align-items: center;
   display: flex;
   justify-content: center;
@@ -332,8 +314,7 @@ display: none;
 }
 .people__ic{
   align-self: left;
-  margin: 15px;
-  margin-top: 0px;
+  margin: 0px 15px 15px 15px;
 }
 .people__incall{
   padding-left: 20px;
@@ -343,8 +324,7 @@ display: none;
 .people__search{
   padding: 10px;
   padding-right: 100px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 0px 0px 20px 20px;
   height: 36px;
   border-radius: 4px;
   -webkit-box-shadow: none;
@@ -452,7 +432,6 @@ input{
   padding-right: 45px;
   margin-bottom: 5px;
 }
-
 .dropup__navlink{
   display: flex;
   padding-bottom: 15px;
@@ -474,17 +453,12 @@ input{
   color: $white;
   font-size: 18px;
   margin:5px;
-  font-family: 'Google Sans',Roboto,Arial,sans-serif;
 }
 input {
   background-image: url(/static/img/search.svg);
   background-position: 10px center;
   background-repeat: no-repeat;
   border: 1px solid #ccc;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   padding: 10px 5px 10px 20px;
   text-indent: 20px;
@@ -556,6 +530,7 @@ input {
   @include nav__center;
   .nav__center{
     right:20%;
+    height: 105px;
   }
   .nav__text{
     display: none;
